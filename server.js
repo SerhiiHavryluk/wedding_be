@@ -3,7 +3,7 @@ import UserModel from './models/User.js';
 import mongoose from 'mongoose';
 import cors from 'cors'
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 8000
 
 mongoose
     .connect('mongodb+srv://serhii:Pravdass1488@wedding1.emnnyw8.mongodb.net/wedding?retryWrites=true&w=majority')
