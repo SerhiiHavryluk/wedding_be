@@ -20,6 +20,7 @@ app.get('/users', async (req, res) => {
     try {
       const users = await UserModel.find();
       res.json(users);
+      res.send(users)
     } catch (error) {
       console.error(error);
       res.status(500).json({ error: 'Не удалось получить пользователей' });
